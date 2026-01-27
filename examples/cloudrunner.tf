@@ -4,7 +4,7 @@ provider "google" {
 }
 
 module "api" {
-  source = "../../modules/cloud-run"
+  source = "../"
 
   project_id = var.project_id
   location   = var.location

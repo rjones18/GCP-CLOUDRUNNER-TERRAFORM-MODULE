@@ -1,12 +1,12 @@
 # GCP CloudRunner Terraform Module
 
-This repository contains a reusable **Terraform module** to deploy applications to **Google Cloud Run**, Google’s fully managed serverless container platform. By providing a standardized interface for Cloud Run services, this module simplifies infrastructure automation and enables repeatable deployments. :contentReference[oaicite:0]{index=0}
+This repository contains a reusable **Terraform module** to deploy applications to **Google Cloud Run**, Google’s fully managed serverless container platform. By providing a standardized interface for Cloud Run services, this module simplifies infrastructure automation and enables repeatable deployments.
 
 ## 🚀 Overview
 
-Google Cloud Run is a serverless compute platform that runs stateless containers and automatically scales based on traffic. This Terraform module provides the building blocks for defining and provisioning Cloud Run services, including options for environment variables, IAM configuration, and custom domain mapping. :contentReference[oaicite:1]{index=1}
+Google Cloud Run is a serverless compute platform that runs stateless containers and automatically scales based on traffic. This Terraform module provides the building blocks for defining and provisioning Cloud Run services, including options for environment variables, IAM configuration, and custom domain mapping.
 
-Terraform modules are reusable blocks of configuration that encapsulate resources and logic to help you provision infrastructure consistently across environments. :contentReference[oaicite:2]{index=2}
+Terraform modules are reusable blocks of configuration that encapsulate resources and logic to help you provision infrastructure consistently across environments.
 
 ---
 
@@ -27,8 +27,6 @@ Before using this module, ensure:
 - You have a Google Cloud project with billing enabled  
 - Required APIs are activated:
   - `run.googleapis.com`  
-  - `vpcaccess.googleapis.com` (optional)  
-  - `sqladmin.googleapis.com` (optional)  
 - Terraform v1.3+ and GCP Terraform provider installed
 
 ---

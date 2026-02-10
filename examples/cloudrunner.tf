@@ -8,8 +8,9 @@ module "api" {
 
   project_id = var.project_id
   location   = var.location
-  name       = "my-api"
-  image      = "us-central1-docker.pkg.dev/my-proj/my-repo/my-api:1.0.0"
+  name       = "my-weather-app"
+  image      = "gcr.io/alert-flames-286515/simple-go-app:addb71f"
+  service_account_email  = google_service_account.cloud_run_sa.email
 
   env = {
     ENVIRONMENT = "dev"
@@ -20,9 +21,9 @@ module "api" {
   max_instance_count = 5
 
   # Option A: private service, grant specific callers:
-  invoker_members = [
-    "user:reggie@example.com"
-  ]
+  # invoker_members = [
+  #   "user:reggie@example.com"
+  # ]
 
   # Option B: make it public:
   # allow_unauthenticated = true

@@ -25,3 +25,10 @@ variable "invoker_email" {
   description = "Email allowed to invoke the Cloud Run service."
   default     = null
 }
+
+variable "secret_ids" {
+  type        = list(string)
+  description = "List of Secret Manager secret IDs this service can access."
+  default     = []
+}
+

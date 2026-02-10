@@ -87,5 +87,10 @@ variable "invoker_members" {
 variable "allow_unauthenticated" {
   type        = bool
   description = "If true, grants allUsers roles/run.invoker (public)."
+  default     = true
+}
+variable "deletion_protection" {
+  type        = bool
+  description = "Prevents accidental deletion when true."
   default     = false
 }
